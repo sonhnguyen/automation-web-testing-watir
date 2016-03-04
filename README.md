@@ -8,13 +8,13 @@
 
 2. Install Gem (Ruby Package Manager)
 
-1. Install Development Kit at http://rubyinstaller.org/downloads/
+* Install Development Kit at http://rubyinstaller.org/downloads/
 
-2. Go to the devkit directory and type ruby dk.rb init to generate config.yml.
+* Go to the devkit directory and type ruby dk.rb init to generate config.yml.
 
-3. After reviewing the config.yml, you can finally type ruby dk.rb install.
+* After reviewing the config.yml, you can finally type ruby dk.rb install.
 
-4. It is done if you can use gem in cmd.
+* It is done if you can use gem in cmd.
 
 3. Type in cmd:
 
