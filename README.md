@@ -4,37 +4,37 @@
 
 1. Install ruby 
 
-* For Windows: use RubyInstaller at: http://rubyinstaller.org/
+	* For Windows: use RubyInstaller at: http://rubyinstaller.org/
 
 2. Install Gem (Ruby Package Manager)
 
-* Install Development Kit at http://rubyinstaller.org/downloads/
+	* Install Development Kit at http://rubyinstaller.org/downloads/
 
-* Go to the devkit directory and type ruby dk.rb init to generate config.yml.
+	* Go to the devkit directory and type ruby dk.rb init to generate config.yml.
 
-* After reviewing the config.yml, you can finally type ruby dk.rb install.
+	* After reviewing the config.yml, you can finally type ruby dk.rb install.
 
-* It is done if you can use gem in cmd.
+	* It is done if you can use gem in cmd.
 
 3. Type in cmd:
 
-* gem update --system --no-rdoc --no-ri
+	* gem update --system --no-rdoc --no-ri
 
-* gem install watir --no-rdoc --no-ri
+	* gem install watir --no-rdoc --no-ri
 
-* gem install require_all
+	* gem install require_all
 
 # Functions:
 
-* Test click button
+	* Test click button
 
-* Assert results
+	* Assert results
 
-* Ajax call
+	* Ajax call
 
-* Get value from web controls
+	* Get value from web controls
 
-* Crawl data from html
+	* Crawl data from html
 
 
 
