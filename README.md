@@ -24,6 +24,8 @@
 
 	* gem install require_all
 
+	* gem install spreadsheet
+
 # Functions:
 
 	* Test click button
