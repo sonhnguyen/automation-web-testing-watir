@@ -6,6 +6,6 @@ require_all "tests/*.rb"
 driver = TestSuite::TestDriver.instance
 
 # TODO: setup to firefox.exe
-driver.setupTest(:firefox, "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe")
+driver.setupTest(:firefox, "/home/nthoang/Applications/firefox/firefox")
 driver.runTests
 driver.showTestStats
