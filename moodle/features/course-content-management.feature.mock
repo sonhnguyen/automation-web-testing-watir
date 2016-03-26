@@ -1,0 +1,30 @@
+@coursecontentmanage-feat-cleanup
+Feature: Course Content Management
+
+Background:
+  Given I have logged in as Admin
+  And I have created "MockCourse" Course
+  And I have created "MockQuiz" Quiz
+  And I am at "MockCourse" Course page
+
+Scenario: User wants to upload an assignment
+  Given the button description: "#1 Button" describes "A Button icon which is a paper and a plus sign"
+  When I click "Turn Editing On" button
+  And I click the first "Add an activity or resource" link
+  And I choose "Assignment" item on the "Add an activity or resource" popup
+  And I click "Add" button
+  Then I should be directed to a Page with prefix "Adding a new Assignment"
+  And I fill "New Assignment" into "Assignment name" textbox
+  And I click "#1 Button" button as described
+  And I choose file "sss.txt" in the "Attachment" filechooser
+  And I click "Upload this file" button
+  And I click "Save and return to course" button
+  Then I should see "New Assignment" appears on the first course section
+  When I click "New Assignment" span
+  Then I should be directed to a Page with prefix "New Assignment"
+  And I should see "sss.txt" link
+
+Scenario: User wants to add multiple choice contents to a quiz
+  When I click "MockQuiz" span
+  Then I should see "No questions have been added yet" alert text
+  When I click "Edit quiz" button

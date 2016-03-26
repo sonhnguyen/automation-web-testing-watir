@@ -64,13 +64,13 @@
 
 	* Wait and wait ... There should be a list of completed items consecutively appear on the browser screen. Keep sliding down until everything is completed. There is a Continue button at the bottom of the screen. click it
 
-	* On the next screen, on 'Username', 'Password' we type 'Testertester1*'. On 'First name' 'Last name' we type 'Tester'. On 'Email address' we type 'tester@cs423.com'. Then click 'Update profile'
+	* On the next screen, on 'Username' we type 'tester', 'Password' we type 'Testertester1*'. On 'First name' 'Last name' we type 'Tester'. On 'Email address' we type 'tester@cs423.com'. Then click 'Update profile'
 
 	* On the next screen, 'Full site name' and 'Short site name' we type 'CS423Test'. Click 'Save changes'
 
 	* Profit
 
-	* Your username will be 'tester' and password will be 'Testertester1'
+	* Your username will be 'tester' and password will be 'Testertester1*'
 
 # Functions:
 

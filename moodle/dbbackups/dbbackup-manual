@@ -1,0 +1,5 @@
+//Backup
+mysqldump --user=tester --password=tester --databases cs423_testdb > cs423_testdb_bak.sql
+
+//Restore
+mysql --user=tester --password=tester cs423_testdb < cs423_testdb_bak.sql
