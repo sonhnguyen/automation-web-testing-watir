@@ -4,7 +4,8 @@ if RUBY_PLATFORM == "java"
   require 'jdbc/mysql'
   DB = Sequel.connect("jdbc:mysql://localhost/cs423_testdb?user=tester&password=tester")
 else
-  raise "ERROR: Unknown RUBY_PLATFORM '#{RUBY_PLATFORM}'"
+  require 'mysql'
+  DB = Sequel.connect("mysql://localhost/cs423_testdb?user=tester&password=tester")
 end
 
 #truncateCrit = DB.tables.select { |tablename|
