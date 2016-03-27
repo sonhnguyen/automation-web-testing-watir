@@ -42,14 +42,12 @@ else
   WEBDRIVER = true
 end
 
-ENV["uploadfolder"] = Dir.pwd + "/../uploads"
-ENV["uploadfolder"].gsub!("/", "\\") if Selenium::WebDriver::Platform.windows?
-
 require 'page-object/page_factory'
 World(PageObject::PageFactory)
 
 Before do
   @browser = browser
+  @screenshoter = Screenshot.new
 end
 
 at_exit do

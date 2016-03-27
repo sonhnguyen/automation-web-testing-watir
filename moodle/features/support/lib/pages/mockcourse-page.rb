@@ -14,6 +14,13 @@ module MockCoursePageMod
 
       page_url "http://localhost/moodle/course/view.php?id=#{courseid}"
 
+      def getModuleItemList
+        res = self.browser.spans(:class, "instancename").map { |moditem| moditem.text }
+        res.delete_at(0)
+        res
+      end
+
+
       def checkRadioButton(btnname)
         case btnname
         when "Assignment"
@@ -51,10 +58,17 @@ module MockCoursePageMod
         brw.span(:class, "section-modchooser-link").links[offset]
       end
 
+      def getModItemLink(offset = 0)
+        brw = self.browser
+        brw.spans(:class, "instancename")[offset]
+      end
+
       def checkLink(linkname)
         case linkname
         when "first Add an activity or resource"
           return self.getAddActivityOrResLink_Elem
+        when "New Assignment"
+          return self.getModItemLink(1)
         else
           raise ArgumentError, "UNKNOWN link name: '#{btnname}'"
         end

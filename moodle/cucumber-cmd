@@ -1,0 +1,1 @@
+cucumber -f pretty -f html --out reports/report.html -f rerun --out reports/rerun.txt

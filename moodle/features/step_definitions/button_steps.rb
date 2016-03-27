@@ -14,7 +14,10 @@ Given(/^the button description: "([^"]*)" describes "([^"]*)"$/) do |btnname, bt
 end
 
 When(/^I click "([^"]*)" button as described$/) do |btnname|
-  #@page.browser.driver.execute_script("window.scrollBy(0,255)")
-  #sleep(3)
-  @widgets[btnname].click
+  begin
+    @widgets[btnname].click
+    sleep(3)
+  rescue Selenium::WebDriver::Error::UnknownError
+    ask("Seems like I cannot click on the button. Can you help me? Press Enter when you are done, so I can proceed")
+  end
 end

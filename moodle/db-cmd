@@ -1,0 +1,1 @@
+sudo ln -s /opt/lampp/var/mysql/mysql.sock /run/mysqld/mysqld.sock

@@ -17,8 +17,10 @@ Scenario: User wants to upload an assignment
   When I click "Add attachment" button as described
   And I choose file "sss.txt" in the "Attachment" filechooser
   And I click "Upload this file" button
+  Then I should expect File "sss.txt" Created in Feature: Course Content Management
   And I click "Save and return to course" button
-  Then I should see "New Assignment" appears on the first course section
-  When I click "New Assignment" span
+  And I should be directed to "MockCourse" Page
+  Then I should expect Assignment "New Assignment" Created in Feature: Course Content Management
+  When I click "New Assignment" link
   Then I should be directed to a Page with prefix "New Assignment"
   And I should see "sss.txt" link
