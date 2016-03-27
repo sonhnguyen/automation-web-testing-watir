@@ -1,4 +1,4 @@
-@coursecontentmanage-feat-cleanup
+@cleanup
 Feature: Course Management
 
 Background:

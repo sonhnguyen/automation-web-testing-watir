@@ -56,7 +56,7 @@ class AddCoursePage
     when "Course short name"
       return self.courseShortName_element
     else
-      raise ArgumentError, "UNKNOWN textbox name: #{txtboxname}"
+      raise ArgumentError, "UNKNOWN textbox name: '#{txtboxname}'"
     end
   end
 
@@ -67,7 +67,7 @@ class AddCoursePage
     when "Course short name"
       return self.courseShortName
     else
-      raise ArgumentError, "UNKNOWN textbox name: #{txtboxname}"
+      raise ArgumentError, "UNKNOWN textbox name: '#{txtboxname}'"
     end
   end
 
@@ -76,7 +76,7 @@ class AddCoursePage
     when "Save and return to course"
       return self.submitReturn_element
     else
-      raise ArgumentError, "UNKNOWN button name: #{btnname}"
+      raise ArgumentError, "UNKNOWN button name: '#{btnname}'"
     end
   end
 
@@ -90,7 +90,7 @@ class AddCoursePage
     if (lstname == "Course category")
       return self.courseCategory
     else
-      raise ArgumentError, "UNKNOWN dropdownList name: #{lstname}"
+      raise ArgumentError, "UNKNOWN dropdownList name: '#{lstname}'"
     end
   end
 
@@ -98,7 +98,7 @@ class AddCoursePage
     if (lstname == "Course category")
       return self.courseCategory_element
     else
-      raise ArgumentError, "UNKNOWN dropdownList name: #{lstname}"
+      raise ArgumentError, "UNKNOWN dropdownList name: '#{lstname}'"
     end
   end
 
@@ -107,7 +107,7 @@ class AddCoursePage
     #  binding.pry
       return self.courseCategory_options
     else
-      raise ArgumentError, "UNKNOWN dropdownList name: #{lstname}"
+      raise ArgumentError, "UNKNOWN dropdownList name: '#{lstname}'"
     end
   end
 

@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'bundler/setup'
 
 if ENV["HEADLESS"] then
   require "celerity"
@@ -39,6 +41,9 @@ else
   INDEX_OFFSET = -1
   WEBDRIVER = true
 end
+
+ENV["uploadfolder"] = Dir.pwd + "/../uploads"
+ENV["uploadfolder"].gsub!("/", "\\") if Selenium::WebDriver::Platform.windows?
 
 require 'page-object/page_factory'
 World(PageObject::PageFactory)

@@ -33,3 +33,11 @@ Then(/^I should expect User Error \#(\d+) in Feature: Course Management$/) do |e
   end
   puts errordesc
 end
+
+Then(/^I should be directed to a Page with prefix "([^"]*)"$/) do |pagename|
+
+  on AddAssignmentPage do |page|
+    @page = page
+    expect(@page.getPageNamePrefix).to eq(pagename)
+  end
+end
