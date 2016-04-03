@@ -11,4 +11,6 @@ group :test do
   gem 'rake', '~> 11.1.1'
   gem 'pry', '~> 0.10.3'
   gem 'pry-byebug'
+  gem 'spreadsheet'
+  gem 'require_all'
 end

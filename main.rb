@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require "require_all"
 
 require_relative "drivers/test-suite.rb"
