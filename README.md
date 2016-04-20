@@ -18,13 +18,13 @@
 
 3. Type in cmd:
 
-	* gem update --system --no-rdoc --no-ri
+	* gem install bundler
+	
+	* bundle install
 
-	* gem install watir --no-rdoc --no-ri
+When we want to run test. Ensure that xampp is turned up. Type in cmd:
 
-	* gem install require_all
-
-	* gem install spreadsheet
+	* rake moodle
 
 # Software-Under-Test Setup
 
